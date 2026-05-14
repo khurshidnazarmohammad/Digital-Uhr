@@ -1,38 +1,45 @@
 from tkinter import *
 import time
 
-window = Tk()
-window.title("Digital Clock")
-window.geometry("400x200")
-window.config(bg="black")
+
+class DigitalClock:
+    def init(self, root):
+        self.root = root
+        self.root.title("Digital Clock 🕒")
+        self.root.geometry("450x200")
+        self.root.config(bg="#0f172a")
+
+        # Uhr
+        self.time_label = Label(
+            root,
+            font=("Arial", 40, "bold"),
+            fg="#00ffb3",
+            bg="#0f172a"
+        )
+        self.time_label.pack(pady=10)
+
+        # Datum
+        self.date_label = Label(
+            root,
+            font=("Arial", 16),
+            fg="white",
+            bg="#0f172a"
+        )
+        self.date_label.pack()
+
+        self.update_clock()
+
+    def update_clock(self):
+        current_time = time.strftime("%H:%M:%S")
+        current_date = time.strftime("%A, %d %B %Y")
+
+        self.time_label.config(text=current_time)
+        self.date_label.config(text=current_date)
+
+        self.root.after(1000, self.update_clock)
 
 
-def update_time():
-    current_time = time.strftime("%H:%M:%S")
-    current_date = time.strftime("%A, %d %B %Y")
-
-    time_label.config(text=current_time)
-    date_label.config(text=current_date)
-
-    window.after(1000, update_time)
-
-
-time_label = Label(
-    window,
-    font=("Arial", 40),
-    fg="lime",
-    bg="black"
-)
-time_label.pack(pady=10)
-
-date_label = Label(
-    window,
-    font=("Arial", 14),
-    fg="white",
-    bg="black"
-)
-date_label.pack()
-
-update_time()
-
-window.mainloop()
+if name == "main":
+    root = Tk()
+    app = DigitalClock(root)
+    root.mainloop()
