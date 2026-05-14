@@ -1,19 +1,18 @@
- Digitale Uhr (Digital Clock)
+🕒 Digitale Uhr (Tkinter)
+Eine einfache digitale Uhr mit Python und Tkinter, die Uhrzeit und Datum in Echtzeit anzeigt.
 
-Dieses Projekt ist eine einfache **digitale Uhr**, die mit **Python** geschrieben wurde.  
-Die Uhr zeigt die aktuelle Uhrzeit in einem digitalen Format an.
+🚀 Funktionen
+Anzeige der aktuellen Uhrzeit
+Anzeige des Datums
+Automatische Aktualisierung jede Sekunde
+Einfaches Dark-Design
 
- Funktionen
-- Anzeige der aktuellen Uhrzeit
-- Einfache und übersichtliche Darstellung
-- Geschrieben in Python
-- Geeignet für Anfänger
+🧠 Was ich gelernt habe
+Arbeiten mit Tkinter (GUI)
+Nutzung von time für Uhrzeit und Datum
+Einsatz von after() für Live-Updates
+Grundlagen von objektorientierter Programmierung
 
- Voraussetzungen
-- Python 3.x muss installiert sein
-
- Ausführen des Programms
-1. Repository herunterladen oder klonen
-2. Die Datei `Digital Uhr.py` ausführen:
-   ```bash
-   python "Digital Uhr.py"
+⚙️ Starten
+Bash
+python main.py
