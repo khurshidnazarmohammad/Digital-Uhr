@@ -12,7 +12,3 @@ Arbeiten mit Tkinter (GUI)
 Nutzung von time für Uhrzeit und Datum
 Einsatz von after() für Live-Updates
 Grundlagen von objektorientierter Programmierung
-
-⚙️ Starten
-Bash
-python main.py
