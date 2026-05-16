@@ -3,7 +3,7 @@ import time
 
 
 class DigitalClock:
-    def init(self, root):
+    def __init__(self, root):
         self.root = root
         self.root.title("Digital Clock 🕒")
         self.root.geometry("450x200")
@@ -39,7 +39,7 @@ class DigitalClock:
         self.root.after(1000, self.update_clock)
 
 
-if name == "main":
+if name == "__main__":
     root = Tk()
     app = DigitalClock(root)
     root.mainloop()
